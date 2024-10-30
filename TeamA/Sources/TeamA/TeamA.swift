@@ -8,7 +8,7 @@ public struct TeamAContentView : View {
     public init() {}
     public var body: some View {
         VStack {
-            Text("I am in Tem A")
+            Text("I am in Team A")
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)

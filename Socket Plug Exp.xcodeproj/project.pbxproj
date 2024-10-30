@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3900CF2CD24808008F6BAE /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = 3B3900CE2CD24808008F6BAE /* SlidingTabView */; };
 		3B54260E2CD1A9660013759D /* Socket_Plug_ExpApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54260D2CD1A9660013759D /* Socket_Plug_ExpApp.swift */; };
 		3B5426102CD1A9660013759D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54260F2CD1A9660013759D /* ContentView.swift */; };
 		3B5426122CD1A9680013759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5426112CD1A9680013759D /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 			files = (
 				3B5426482CD1FBF90013759D /* TeamB in Frameworks */,
 				3B5426222CD1D5AD0013759D /* TeamA in Frameworks */,
+				3B3900CF2CD24808008F6BAE /* SlidingTabView in Frameworks */,
 				3B5426432CD1F54B0013759D /* DesignKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +114,7 @@
 				3B5426212CD1D5AD0013759D /* TeamA */,
 				3B5426422CD1F54B0013759D /* DesignKit */,
 				3B5426472CD1FBF90013759D /* TeamB */,
+				3B3900CE2CD24808008F6BAE /* SlidingTabView */,
 			);
 			productName = "Socket Plug Exp";
 			productReference = 3B54260A2CD1A9660013759D /* Socket Plug Exp.app */;
@@ -141,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 3B5426012CD1A9660013759D;
+			packageReferences = (
+				3B3900CD2CD24808008F6BAE /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+			);
 			productRefGroup = 3B54260B2CD1A9660013759D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -389,7 +395,23 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		3B3900CD2CD24808008F6BAE /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		3B3900CE2CD24808008F6BAE /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B3900CD2CD24808008F6BAE /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
 		3B5426212CD1D5AD0013759D /* TeamA */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TeamA;
