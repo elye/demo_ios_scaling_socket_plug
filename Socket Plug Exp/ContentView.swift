@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import DesignKit
 
 struct ContentView: View {
     var body: some View {
@@ -14,6 +15,8 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            doSomething("Passing Through")
+            ItemRow(message: "")
         }
         .padding()
     }
@@ -22,3 +25,15 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+struct ItemRow: View {
+    let message: String
+    var body: some View {
+        Text(message)
+    }
+}
+
+var doSomething: (String) -> PlugItemView = { data in
+        return PlugItemView(content: AnyView(ItemRow(message: data)))
+    }
+
