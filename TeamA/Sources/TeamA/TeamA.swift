@@ -13,9 +13,13 @@ public struct TeamAContentView : View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
-            PlugItemRegistry.retrieve(key: "TeamAPlug")("Passing Through")
-            PlugItemRegistry.retrieve(key: "TeamBPlug")("To our neighbour")
-//            doSomething("Passing Through")
+            SocketListView(
+                items: [
+                    ("TeamAPlug", "Passing Through"),
+                    ("TeamBPlug", "To our neighbour"),
+                    ("TeamCPlug", "SORRY"),
+                ]
+            )
         }
     }
 }
