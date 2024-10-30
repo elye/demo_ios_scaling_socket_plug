@@ -11,7 +11,10 @@
 		3B5426102CD1A9660013759D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54260F2CD1A9660013759D /* ContentView.swift */; };
 		3B5426122CD1A9680013759D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5426112CD1A9680013759D /* Assets.xcassets */; };
 		3B5426162CD1A9680013759D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B5426152CD1A9680013759D /* Preview Assets.xcassets */; };
-		3B54261F2CD1BC530013759D /* DesignKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3B54261E2CD1BC530013759D /* DesignKit */; };
+		3B5426222CD1D5AD0013759D /* TeamA in Frameworks */ = {isa = PBXBuildFile; productRef = 3B5426212CD1D5AD0013759D /* TeamA */; };
+		3B5426242CD1DABC0013759D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5426232CD1DABC0013759D /* AppDelegate.swift */; };
+		3B5426432CD1F54B0013759D /* DesignKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3B5426422CD1F54B0013759D /* DesignKit */; };
+		3B5426482CD1FBF90013759D /* TeamB in Frameworks */ = {isa = PBXBuildFile; productRef = 3B5426472CD1FBF90013759D /* TeamB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3B5426132CD1A9680013759D /* Socket_Plug_Exp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Socket_Plug_Exp.entitlements; sourceTree = "<group>"; };
 		3B5426152CD1A9680013759D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3B54261C2CD1B98F0013759D /* DesignKit */ = {isa = PBXFileReference; lastKnownFileType = text; path = DesignKit; sourceTree = SOURCE_ROOT; };
+		3B5426202CD1D4C20013759D /* TeamA */ = {isa = PBXFileReference; lastKnownFileType = text; path = TeamA; sourceTree = SOURCE_ROOT; };
+		3B5426232CD1DABC0013759D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B5426462CD1FBA00013759D /* TeamB */ = {isa = PBXFileReference; lastKnownFileType = text; path = TeamB; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B54261F2CD1BC530013759D /* DesignKit in Frameworks */,
+				3B5426482CD1FBF90013759D /* TeamB in Frameworks */,
+				3B5426222CD1D5AD0013759D /* TeamA in Frameworks */,
+				3B5426432CD1F54B0013759D /* DesignKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,8 +64,11 @@
 		3B54260C2CD1A9660013759D /* Socket Plug Exp */ = {
 			isa = PBXGroup;
 			children = (
+				3B5426462CD1FBA00013759D /* TeamB */,
+				3B5426202CD1D4C20013759D /* TeamA */,
 				3B54261C2CD1B98F0013759D /* DesignKit */,
 				3B54260D2CD1A9660013759D /* Socket_Plug_ExpApp.swift */,
+				3B5426232CD1DABC0013759D /* AppDelegate.swift */,
 				3B54260F2CD1A9660013759D /* ContentView.swift */,
 				3B5426112CD1A9680013759D /* Assets.xcassets */,
 				3B5426132CD1A9680013759D /* Socket_Plug_Exp.entitlements */,
@@ -98,7 +109,9 @@
 			);
 			name = "Socket Plug Exp";
 			packageProductDependencies = (
-				3B54261E2CD1BC530013759D /* DesignKit */,
+				3B5426212CD1D5AD0013759D /* TeamA */,
+				3B5426422CD1F54B0013759D /* DesignKit */,
+				3B5426472CD1FBF90013759D /* TeamB */,
 			);
 			productName = "Socket Plug Exp";
 			productReference = 3B54260A2CD1A9660013759D /* Socket Plug Exp.app */;
@@ -154,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B5426242CD1DABC0013759D /* AppDelegate.swift in Sources */,
 				3B5426102CD1A9660013759D /* ContentView.swift in Sources */,
 				3B54260E2CD1A9660013759D /* Socket_Plug_ExpApp.swift in Sources */,
 			);
@@ -376,9 +390,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3B54261E2CD1BC530013759D /* DesignKit */ = {
+		3B5426212CD1D5AD0013759D /* TeamA */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TeamA;
+		};
+		3B5426422CD1F54B0013759D /* DesignKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DesignKit;
+		};
+		3B5426472CD1FBF90013759D /* TeamB */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TeamB;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

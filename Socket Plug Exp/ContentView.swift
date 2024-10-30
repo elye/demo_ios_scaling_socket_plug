@@ -7,16 +7,19 @@
 
 import SwiftUI
 import DesignKit
+import TeamA
 
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-            doSomething("Passing Through")
-            ItemRow(message: "")
+            NavigationView {
+                        VStack {
+                            Text("Hello World")
+                            NavigationLink(destination: TeamAContentView()) {
+                                Text("Do Something")
+                            }
+                        }
+                    }
         }
         .padding()
     }
@@ -25,15 +28,3 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
-
-struct ItemRow: View {
-    let message: String
-    var body: some View {
-        Text(message)
-    }
-}
-
-var doSomething: (String) -> PlugItemView = { data in
-        return PlugItemView(content: AnyView(ItemRow(message: data)))
-    }
-
