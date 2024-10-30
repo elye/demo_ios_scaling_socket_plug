@@ -16,7 +16,8 @@ public struct TeamAContentView : View {
             SocketListView(
                 items: [
                     ("TeamAPlug", "Passing Through"),
-                    ("TeamBPlug", "To our neighbour"),
+                    ("TeamBPlug1", "To our neighbour"),
+                    ("TeamBPlug2", "Smaller one"),
                     ("TeamCPlug", "SORRY"),
                 ]
             )
@@ -34,6 +35,10 @@ struct ItemRow: View {
     let message: String
     var body: some View {
         Text("This is from Team A:" + message)
+            .frame(maxWidth: .infinity)
+            .padding(32)
+            .background(Color.green)
+            .border(Color.black)
     }
 }
 
