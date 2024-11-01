@@ -33,7 +33,10 @@ struct MySocketList: View {
             items: [
                 ("TeamAPlug", "Passing Through"),
                 ("TeamBPlug1", "To our neighbour"),
+                ("TeamBPlug1", "THere to"),
                 ("TeamBPlug2", "Smaller one"),
+                ("TeamAPlug", "Passing Through"),
+                ("TeamBPlug1", "To our neighbour"),
                 ("TeamCPlug", "SORRY"),
             ]
         )

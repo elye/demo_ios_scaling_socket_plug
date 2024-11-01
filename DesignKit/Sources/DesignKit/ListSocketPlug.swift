@@ -2,17 +2,24 @@
 import SwiftUI
 
 
+struct ListItem: Hashable {
+    let key: String
+    let data: String
+}
+
 public struct SocketListView: View {
-    public init(items: [(String, String)]) { internal_items = items}
-    private var internal_items: [(String, String)] = []
+    public init(items: [(String, String)]) {
+        internal_items = items.map { ListItem(key: $0.0, data: $0.1) }
+    }
+    private var internal_items: [ListItem] = []
 
     public var body: some View {
         VStack {
             Text("This is List Socket in Design Kit")
             ScrollView {
                 LazyVGrid(columns: [GridItem(.flexible())]) {
-                    ForEach(internal_items, id: \.0) { (key, data) in
-                        PlugItemRegistry.retrieveItem(key: key)(data)
+                    ForEach(internal_items, id: \.self) { listItem in
+                        PlugItemRegistry.retrieveItem(key: listItem.key)(listItem.data)
                     }
                 }
             }
